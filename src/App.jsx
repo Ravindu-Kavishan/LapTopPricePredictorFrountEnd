@@ -56,7 +56,8 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Laptop Specifications Form</h1>
+      <h1>💻 Laptop Price Predictor</h1>
+      <p className="subtitle">Enter your laptop specifications to get an estimated price in LKR</p>
       <form onSubmit={handleSubmit} className="laptop-form">
         <div className="form-group">
           <label>Company:</label>
