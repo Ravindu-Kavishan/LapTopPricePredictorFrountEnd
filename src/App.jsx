@@ -31,7 +31,7 @@ function App() {
     e.preventDefault()
     setLoading(true)
     try {
-      const response = await fetch('http://localhost:8000/predict', {
+      const response = await fetch('https://laptoppricepredictorbackend-auafczcjf8ddbvck.centralindia-01.azurewebsites.net/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -62,7 +62,6 @@ function App() {
           <label>Company:</label>
           <select name="company" value={formData.company} onChange={handleChange} required>
             <option value="">Select Company</option>
-            <option value="company">company</option>
             <option value="Dell">Dell</option>
             <option value="Lenovo">Lenovo</option>
             <option value="HP">HP</option>
